@@ -10,25 +10,37 @@ namespace RockPaperScissors
     {
         static void Main(string[] args)
         {
-            bool run = true;
-            string Continue;
+         
             do
             {
-                Roshambo game = new Roshambo();
-                game.Play();
+                Console.WriteLine("Ready, Set, Go! ");
 
+                //Console.WriteLine("Choose an option Lions, Tigers, or Bears: ");
+                Console.WriteLine("Please Enter Rock,Paper, Scissors: ");
 
-                Console.WriteLine("Continue?  (y/n)");
-                Continue = Console.ReadLine().ToUpper();
+                Input player = new Input();
+                Rand computer = new Rand();
+                string output1 = player.GetRoshambo();
+                string output2 = computer.GetRoshambo();
 
-                if (Continue == "N")
-                    break;
+                if ((output1 == "p" && output2 == "r") || (output1 == "r" && output2 == "s") || (output1 == "s" && output2 == "p"))
+                {
+                    Console.WriteLine("You ARE the winner.");
 
-                if (Continue == "y")
-                    return;
-
-
-            } while (run == true);
+                }
+                if ((output1 == "r" && output2 == "p") || (output1 == "s" && output2 == "r") || (output1 == "p" && output2 == "s"))
+                {
+                    Console.WriteLine("You ARE the winner.");
+                }
+                else if (output1 == output2)
+                {
+                    Console.WriteLine("Nobody Won, TIE GAME.");
+                }
+            } while (true);
         }
     }
 }
+   
+
+
+     
