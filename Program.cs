@@ -25,12 +25,12 @@ namespace RockPaperScissors
 
                 if ((output1 == "p" && output2 == "r") || (output1 == "r" && output2 == "s") || (output1 == "s" && output2 == "p"))
                 {
-                    Console.WriteLine("You ARE the winner.");
+                    Console.WriteLine("You ARE the WINNER {0} wins over {1}", output1, output2);
 
                 }
                 if ((output1 == "r" && output2 == "p") || (output1 == "s" && output2 == "r") || (output1 == "p" && output2 == "s"))
                 {
-                    Console.WriteLine("You ARE the winner.");
+                    Console.WriteLine("Computer WON {0} wins over {1}", output2, output1);
                 }
                 else if (output1 == output2)
                 {

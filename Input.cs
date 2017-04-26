@@ -10,7 +10,8 @@ namespace RockPaperScissors
     { 
         public override string GetRoshambo()
         {
-            Console.WriteLine("Please type");
+            Console.WriteLine("Play Against Computer =====>");
+            Console.WriteLine("[r] to play as the Rock [p] to play as Paper [s] to play as Scissors");
             string input = Console.ReadLine();
             return input;
         }

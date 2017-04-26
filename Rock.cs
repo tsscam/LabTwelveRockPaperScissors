@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace RockPaperScissors
 {
-    //class Rock:Player
-    //{
-    //    public override string GetRoshmado()
-    //    {
-    //        return "rock";
-    //    }
-    //}
+    class Rock : Player
+    {
+        public override string GetRoshambo()
+        {
+          return "rock";
+        }
+    }
 }
